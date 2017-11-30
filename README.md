@@ -37,7 +37,7 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
 <p>The model contains properties which reflect the data schema
     being returned from the API.  The properties are naturally named
     and will be used within the application. The properties contain
-    attributes are listed below:
+    attributes are listed below:</p>
 
     <ul>
         <li>name: This is the column name within the API data.</li>
