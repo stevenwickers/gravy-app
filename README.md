@@ -53,7 +53,7 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
 <p>Models are used with forms and no need to use state for input text boxes
  because the model property can be used instead.
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" width="350px" />
+       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
     </p>
 </p>
 <p><h1><b>GravyBoat</b></h1></p>
