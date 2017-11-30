@@ -11,8 +11,9 @@ code between pages and Redux by infusing separation of concerns
 making code more readable and maintainable. <b>Steven Wickers</b>
 created the Gravy pattern and was launch in <b>November 2017</b>.
 </p>
-<p><b>What the Training Videos</b>
-<a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a>
+<p><h2><b>What the Training</b>
+<a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a> here!
+</h2>
 </p>
 
 <p><h1>Controller</h1></p>
