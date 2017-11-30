@@ -16,7 +16,7 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
 </p>
 
 
-<p>GraVy introduces a new file called <b>Controller</b>.</p>
+<p><b>GraVy</b> introduces a new file called <b>Controller</b>.</p>
 <p>
    The controller is used as a Data Provider for a page and
    all controllers contain the same function declarations and
@@ -38,12 +38,19 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
     allows the code to properly maintain the data during
     CRUD operations.
     <br>With Models state is not needed when filling out forms.</br>
+    <p align="center">
+       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" width="350"/>
+    </p>
 </p>
-<p>GravyBoat</p>
+<p><b>GravyBoat</b></p>
 <p>GravyBoat is a powerful component of GraVy.
     With GravyBoat you have one reducer for all controllers, which
     allows you to persist data when needed as well as clear persisted data.
-    GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data from the Redux store.
+    GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data
+    from the Redux store.
+    <p align="center">
+       <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" width="350"/>
+    </p>
 </p>
 
 
