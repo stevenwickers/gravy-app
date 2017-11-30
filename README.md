@@ -38,24 +38,24 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
     being returned from the API.  The properties are naturally named
     and will be used within the application. The properties contain
     attributes are listed below:</p>
-
+<p>
     <ul>
         <li>name: This is the column name within the API data.</li>
         <li>type: This is the type of the column value dispatched form the API.</li>
         <li>value: The value of the property which can be set or retrieved.</li>
         <li>sealed: This is used on properties that can’t be updated. Models are passed to the controller to perform updates on the data. During updates any property with a sealed attribute will be ignored.</li>
     </ul>
+    </p>
    <p>
-    All properties are prefixed with ‘p_’ (lowercase p and underscore). This is to better find all properties when using IntelliSense.
+    All properties are prefixed with "p_" (lowercase p and underscore). This is to better find all properties when using IntelliSense.
    </p>
 
 <p>Models are used with forms and no need to use state for input text boxes
- because the model property can be used instead.
+ because the model property can be used instead.</p>
 
     <p align="center">
        <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
     </p>
-</p>
 <p><h1><b>GravyBoat</b></h1></p>
 <p>GravyBoat is a powerful component of GraVy.
     With GravyBoat you have one reducer for all controllers, which
