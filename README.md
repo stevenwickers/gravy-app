@@ -51,11 +51,11 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
    </p>
 
 <p>Models are used with forms and no need to use state for input text boxes
- because the model property can be used instead.</p>
-
+ because the model property can be used instead.
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
+       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" width="350px" />
     </p>
+</p>
 <p><h1><b>GravyBoat</b></h1></p>
 <p>GravyBoat is a powerful component of GraVy.
     With GravyBoat you have one reducer for all controllers, which
