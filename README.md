@@ -39,16 +39,18 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
     and will be used within the application. The properties contain
     attributes are listed below:
 
-   •	name: This is the column name within the API data.
-   •	type: This is the type of the column value dispatched form the API.
-   •	value: The value of the property which can be set or retrieved.
-   •	sealed: This is used on properties that can’t be updated. Models are passed to the controller to perform updates on the data. During updates any property with a sealed attribute will be ignored.
-
-
-   All properties are prefixed with ‘p_’ (lowercase p and underscore). This is to better find all properties when using IntelliSense.
+    <ul>
+        <li>name: This is the column name within the API data.</li>
+        <li>type: This is the type of the column value dispatched form the API.</li>
+        <li>value: The value of the property which can be set or retrieved.</li>
+        <li>sealed: This is used on properties that can’t be updated. Models are passed to the controller to perform updates on the data. During updates any property with a sealed attribute will be ignored.</li>
+    </ul>
+   <p>
+    All properties are prefixed with ‘p_’ (lowercase p and underscore). This is to better find all properties when using IntelliSense.
+   </p>
 
 <p>Models are used with forms and no need to use state for input text boxes
- because the model property can be used instead.</p>
+ because the model property can be used instead.
 
     <p align="center">
        <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
