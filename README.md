@@ -15,7 +15,7 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
 <a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a>
 </p>
 
-
+<p><h1>Controller</h1></p>
 <p><b>GraVy</b> introduces a new file called <b>Controller</b>.</p>
 <p>
    The controller is used as a Data Provider for a page and
@@ -31,7 +31,7 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
      <img src="http://gravytraining.azurewebsites.net/Images/mrc_overview_complex.png" width="350"/>
    </p>
 </p>
-<p><b>Models</b></p>
+<p><h1><b>Models</b></h1></p>
 <p>Used like a DTO object, the model contains database schema
     with users friendly property names along with attribute types
     such as name, type, value, and sealed. The model attributes
@@ -39,17 +39,17 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
     CRUD operations.
     <br>With Models state is not needed when filling out forms.</br>
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" width="350"/>
+       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
     </p>
 </p>
-<p><b>GravyBoat</b></p>
+<p><h1><b>GravyBoat</b></h1></p>
 <p>GravyBoat is a powerful component of GraVy.
     With GravyBoat you have one reducer for all controllers, which
     allows you to persist data when needed as well as clear persisted data.
     GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data
     from the Redux store.
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" width="350"/>
+       <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" />
     </p>
 </p>
 
