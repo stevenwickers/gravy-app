@@ -28,7 +28,6 @@ class BaseController extends React.Component {
 
     BaseSortModel(modelData, columnName, dispatchType){
 
-        debugger;
 
         let data = SafeCopy(modelData);
         let isAscending = this.sortAscending;

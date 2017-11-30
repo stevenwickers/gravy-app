@@ -13,13 +13,11 @@ import '../../../Common/Styles/panelStyles.css';
 
 const AddEditMoviePopup = ({model, title, calendarVisible, onToggleCalendar, onCalClick,  onInputChange, onClose}) =>{
 
-    debugger;
 
     const displayCalendar = {
         'display': calendarVisible ? 'block' : 'none'
      };
 
-    debugger;
 
     //**********************************************************************
     //WARNING -> This is only a test page and there is no validation!!!!  **

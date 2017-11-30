@@ -2,7 +2,7 @@ import React from 'react';
 import BaseController from '../BaseController';
 import MemberContainer from './Models/MemberContainer';
 import {MemberModel} from './Models/MemberModel';
-import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../Reducer/gravyBoadStateHelper';
+import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../Reducer/gravyBoatStateHelper';
 import {mapStateToProps} from "./StateMappers/MemberStateMapperV1";
 
 
@@ -15,7 +15,7 @@ import {SafeCopy} from "../../../Utilities/ObjectUtilities";
 
 
 
-export default class MemeberController extends BaseController {
+export default class MemberController extends BaseController {
     constructor(props) {
         super(props, 'members');
 
@@ -41,7 +41,6 @@ export default class MemeberController extends BaseController {
 
     }
 
-
     Select(queryString=''){
 
         this.BaseSelect(this.apiGet, queryString, MemberTypes.MEMBER_LOAD_SUCCESS)
@@ -63,13 +62,11 @@ export default class MemeberController extends BaseController {
 
     }
 
-
     DeleteById(id){
 
         this.BaseDelete(this.apiDelete, id, MemberTypes.MEMBER_DELETE_SUCCESS);
 
     }
-
 
     ///NOT IMPLEMENTED
     Delete(model){
@@ -85,8 +82,6 @@ export default class MemeberController extends BaseController {
 
 
 export function memberMapStateToProps(state){
-
-    debugger;
 
     //Calling the MemberStateMapperV1 to get data
     //Alway return data!

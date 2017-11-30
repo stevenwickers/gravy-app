@@ -1,7 +1,7 @@
 import React from 'react';
 import {MovieModel} from '../Models/MovieModel';
 import {AutoMap} from "../../../Helpers/ModelHelper";
-import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../../Reducer/gravyBoadStateHelper';
+import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../../Reducer/gravyBoatStateHelper';
 import {SafeCopy} from "../../../../Utilities/ObjectUtilities";
 import ToastUtilities from '../../../../Utilities/ToastUtilities';
 
@@ -23,6 +23,8 @@ import '../../../../Utilities/Extensions/ArrayExtensions';
 // while creating and test your new version of this file
 //
 export function mapStateToProps(state){
+
+    debugger;
 
     //Gravy Boat - Get last dispatched
     let reducedData = GetLastReducedData(state, MovieTypes.MOVIE_PREFIX, MovieTypes.MOVIE_LOAD_SUCCESS, MovieTypes.MoVIE_DISPATCH);

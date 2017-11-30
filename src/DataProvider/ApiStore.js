@@ -36,7 +36,6 @@ export function processGetPromise(url){
 export function processMaintainPromise(data, url, type){
     return new Promise(function(resolve, reject){
 
-        debugger;
 
         //Format Api Url
         let apiUrl = ApiUtilities.getFormattedApiUrl(url);

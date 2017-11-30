@@ -11,8 +11,8 @@ export function GetLastReducedData(state, type, persistedKey, newDispatchedKey='
     // @state -> state from the Redux store
     //
     // @type -> is the Prefix code of the controller types
-    //          i.e.: For movie controller MOVIE_ is the prefix since all
-    //                movie type start with MOVIE
+    //          i.e.: For movie controller #MOVIE_ is the prefix since all
+    //                movie type start with #MOVIE_
     //
     // @persistedKey -> If last dispatch type is not of the controller type
     //                  the persisted data of that controller will be passed back

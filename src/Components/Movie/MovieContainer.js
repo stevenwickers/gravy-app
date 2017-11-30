@@ -46,7 +46,6 @@ class MovieContainer extends React.Component{
 
         debugger;
 
-
         //The Controller
         this.MovieController = new MovieController(props);
 
@@ -187,6 +186,8 @@ function mapStateToProps(state, ownProps){
         member: memberMapStateToProps(state),
 
         loading: state.ajaxCallsInProcess > 0,
+
+
 
     }
 

@@ -89,7 +89,6 @@ export default class MovieController extends BaseController {
 
 export function movieMapStateToProps(state){
 
-    debugger;
 
     //Call the mapStateToProps from the Movie State Mapper file.
     //Always return the data

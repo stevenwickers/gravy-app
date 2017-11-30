@@ -10,7 +10,6 @@ const ModifyingModes = {
 class ControlEvents{
 
     handelInputChange(model, e){
-        debugger;
 
         //Use the Model Base method to get or set model property value
         //  by attribute name
@@ -60,7 +59,6 @@ class ControlEvents{
 
     handleCloseAddEditForm(isSaving){
 
-        debugger;
 
         if(isSaving){
 
@@ -104,7 +102,6 @@ class ControlEvents{
 
     handelCalendarClick(id, e){
 
-        debugger;
 
         let date = e._d;
         let month = (date.getMonth() + 1).toString();

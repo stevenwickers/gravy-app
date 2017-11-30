@@ -59,7 +59,7 @@ export function TransposeModelToDataObject(model){
     //                                                               SEALED
     //                                                                 |
     //                                                                 V
-    //          pMovieId: {name:'movie_id', type: Number, value:'1', sealed: true}
+    //          p_MovieId: {name:'movie_id', type: Number, value:'1', sealed: true}
     //
     //
     //Examples:
@@ -114,7 +114,7 @@ export function TransposeDataObjectToModel(data, model){
     //          |
     //          |
     //          V
-    //     pMovieName: { movie_id: 1, movie_name : "Avatar", release_date : "12/18/2009", ...}
+    //     p_MovieName: { movie_id: 1, movie_name : "Avatar", release_date : "12/18/2009", ...}
     //
 
 

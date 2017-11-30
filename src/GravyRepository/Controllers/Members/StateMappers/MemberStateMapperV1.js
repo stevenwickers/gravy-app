@@ -1,6 +1,6 @@
 import React from 'react';
 import {MemberModel} from '../Models/MemberModel';
-import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../../Reducer/gravyBoadStateHelper';
+import {GetLastReducedData, UpdatePersistedData, GetPersistedDataByKey} from '../../../../Reducer/gravyBoatStateHelper';
 import {SafeCopy} from "../../../../Utilities/ObjectUtilities";
 
 import * as MemberTypes from '../Models/MemberTypes';

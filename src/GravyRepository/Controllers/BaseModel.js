@@ -56,7 +56,6 @@ class BaseModel{
 
     resetAttributesValues(){
 
-        debugger;
 
         let attributes = Object.entries(this.properties);
 
