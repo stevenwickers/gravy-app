@@ -27,18 +27,29 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
    <b><u><i>mapStateToProps</i></u></b> function and are responsible
    for getting data from the store and passing the data back
    to the page.
-   <br>There is only one Action file for entire project</br>
+   <p>There is only one Action file for entire project with naturally named
+   functions such as GET, PUT, POST, DELETE, and PATCH.</p>
    <p align="center">
      <img src="http://gravytraining.azurewebsites.net/Images/mrc_overview_complex.png" width="350"/>
    </p>
 </p>
 <p><h1><b>Models</b></h1></p>
-<p>Used like a DTO object, the model contains database schema
-    with users friendly property names along with attribute types
-    such as name, type, value, and sealed. The model attributes
-    allows the code to properly maintain the data during
-    CRUD operations.
-    <br>With Models state is not needed when filling out forms.</br>
+<p>The model contains properties which reflect the data schema
+    being returned from the API.  The properties are naturally named
+    and will be used within the application. The properties contain
+    attributes are listed below:
+
+   •	name: This is the column name within the API data.
+   •	type: This is the type of the column value dispatched form the API.
+   •	value: The value of the property which can be set or retrieved.
+   •	sealed: This is used on properties that can’t be updated. Models are passed to the controller to perform updates on the data. During updates any property with a sealed attribute will be ignored.
+
+
+   All properties are prefixed with ‘p_’ (lowercase p and underscore). This is to better find all properties when using IntelliSense.
+
+<p>Models are used with forms and no need to use state for input text boxes
+ because the model property can be used instead.</p>
+
     <p align="center">
        <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
     </p>
@@ -53,5 +64,24 @@ created the Gravy pattern and was launch in <b>November 2017</b>.
        <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" />
     </p>
 </p>
-
-
+<p><h1>Naturally Named Functions</h1></p>
+<p>Naturally named functions are named for the action that is being
+performed within the context of its source.
+</p>
+<p>Example: Movie Action file should have a function named
+Select instead of getMovieData. This is because the action
+file’s responsibility is to get data from a data source and
+Select is an inherit function within most databases
+engines like Mongo, SQL and Oracle.
+</p>
+<p>
+Another example is if a file that call API should have naturally
+named functions such as GET, POST, PUT, PATCH and DELETE</p>
+<p>
+Developers understand immediately natural named function
+</p>
+</p>
+<p><h2><b>What the Training</b>
+<a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a> here!
+</h2>
+</p>
