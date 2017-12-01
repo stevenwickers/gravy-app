@@ -15,80 +15,105 @@ const Overiview = () =>{
 
             <div className="row" id="content">
 
-                <div className="medium-2 columns" data-sticky-container>
-                    <HelpMenu/>
-                </div>
-
                 <div className="medium-10 columns">
                     <div className="blog-post">
                         <h1>Overview</h1>
-                        <p><b>Gravy</b> is a coding pattern, which is used to enhance
-                            your React and Redux development. Gravy removes
-                            tightly coupled code between pages and Redux by
-                            infusing separation of concerns making code
-                            more readable and maintainable. <b>Steven Wickers</b> created
-                            the Gravy pattern and was
-                            launch in <b>November 2017</b>.</p>
-
-                           <p> To understand Gravy and how it works, let’s first look at how
-                               React and Redux is used today.
+                        <p>
+                            <b>GraVy</b> is a coding pattern, which is used to enhance your
+                            React and Redux development. GraVy removes tightly coupled
+                            code between pages and Redux by infusing separation of concerns
+                            making code more readable and maintainable. <b>Steven Wickers</b>
+                            created the GraVy coding pattern and was launch in <b>November 2017</b>.
+                        </p>
+                        <p><h2><b>Watch the GraVy training </b>
+                            <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+                        </h2>
                         </p>
                     </div>
 
                     <div className="blog-post">
-                        <h1>Current React / Redux Pattern</h1>
-                        <div className="large-12" style={{paddingLeft:25}}>
-
-                                <h2><ul><li>Page</li></ul></h2>
-
-                        </div>
-
-                        <div className="medium-6 columns">
-                        <p>Suppose you have a page that needs to display movie
-                            data in a tabular format. This data will come from a
-                            data source such as Mongo or SQL. After developing the
-                            Movie Page a Movie Action file is needed to retrieve
-                            data via an API call. </p>
-
-                            <h2><ul><li>Action File</li></ul></h2>
-
-                            <p>Usually the developer creating the page must also
-                                create the action file and any associated reducer
-                                files.
+                        <p><h1>Controller</h1></p>
+                        <p><b>GraVy</b> introduces a new file called <b>Controller</b>.</p>
+                        <p>
+                            The controller is used as a Data Provider for a page and
+                            all controllers contain the same function declarations and
+                            parameter listings. The functions are naturally named to
+                            represent CRUD operations on a data source, such as Select,
+                            Insert, Update, Delete. Controllers are also contain
+                            <b><u><i>mapStateToProps</i></u></b> function and are responsible
+                            for getting data from the store and passing the data back
+                            to the page.
+                            <p>There is only one Action file for entire project with naturally named
+                                functions such as GET, PUT, POST, DELETE, and PATCH.</p>
+                            <p align="center">
+                                <img src="http://gravytraining.azurewebsites.net/Images/mrc_overview_complex.png" width="350"/>
                             </p>
-                        </div>
-                        <div className="medium-6 columns">
-                            <img className="thumbnail" src={require('./Lib/Images/current_redux.png')} />
-                        </div>
-
-                        <div className="medium-12 columns" >
-                            <p>In this example, the Movie Action file contains an exposed
-                                function called <i>GetMovieData</i>, which will retrieve all
-                                movie data from an API. Unfortunately this function is
-                                not naturally named. Suppose there is another action file
-                                called Member and the developer who created this file
-                                has a function named <i>QueryMemberData</i>. This leads to
-                                non-standard naming conventions or even non-intuitive
-                                function names. On top of that, the function names are
-                                not <b>naturally</b> named. A even bigger problem is that
-                                the developer of the page must know the exact function
-                                name and parameters to get the information needed.
-                            </p>
-                            <p>Naturally named functions are named for the actions
-                                that is being performed. For example, a function named
-                                <i>Select</i> is a naturally named function within the
-                                action file.  This is because the action file’s
-                                responsibility is to get data from a data source and
-                                <i>Select</i> is an inherit function within most
-                                databases like Mongo or SQL. A file that calls APIs
-                                would have natural function name such as <i>POST</i>.
-                                Developers understand immediately natural named function
-                                within the file’s context.
-
-                            </p>
-                        </div>
-
+                        </p>
                     </div>
+
+                    <div className="blog-post">
+                        <p><h1><b>Models</b></h1></p>
+                        <p>The model contains properties which reflect the data schema
+                            being returned from the API.  The properties are naturally named
+                            and will be used within the application. The properties contain
+                            attributes are listed below:</p>
+                        <p>
+                            <ul>
+                                <li>name: This is the column name within the API data.</li>
+                                <li>type: This is the type of the column value dispatched form the API.</li>
+                                <li>value: The value of the property which can be set or retrieved.</li>
+                                <li>sealed: This is used on properties that can’t be updated. Models are passed to the controller to perform updates on the data. During updates any property with a sealed attribute will be ignored.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            All properties are prefixed with "p_" (lowercase p and underscore). This is to better find all properties when using IntelliSense.
+                        </p>
+
+                        <p>Models are used with forms and no need to use state for input text boxes
+                            because the model property can be used instead.
+                            <p align="center">
+                                <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
+                            </p>
+                        </p>
+                    </div>
+
+                    <div className="blog-post">
+                        <p><h1><b>GravyBoat</b></h1></p>
+                        <p>GravyBoat is a powerful component of GraVy.
+                            With GravyBoat you have one reducer for all controllers, which
+                            allows you to persist data when needed as well as clear persisted data.
+                            GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data
+                            from the Redux store.
+                            <p align="center">
+                                <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" />
+                            </p>
+                        </p>
+                    </div>
+
+                    <div className="blog-post">
+                        <p><h1>Naturally Named Functions</h1></p>
+                        <p>Naturally named functions are named for the action that is being
+                            performed within the context of its source.
+                        </p>
+                        <p>Example: Movie Action file should have a function named
+                            Select instead of getMovieData. This is because the action
+                            file’s responsibility is to get data from a data source and
+                            Select is an inherit function within most databases
+                            engines like Mongo, SQL and Oracle.
+                        </p>
+                        <p>
+                            Another example is if a file that calls APIs should have naturally
+                            named functions such as GET, POST, PUT, PATCH and DELETE</p>
+                        <p>
+                            Developers understand immediately natural named function
+                        </p>
+
+                    <p><h2><b>Watch the GraVy training </b>
+                        <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+                    </h2>
+                    </p>
+
+                </div>
 
                 </div>
 

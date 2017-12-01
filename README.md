@@ -6,13 +6,13 @@
 
 <p>
 <b>GraVy</b> is a coding pattern, which is used to enhance your
-React and Redux development. Gravy removes tightly coupled
+React and Redux development. GraVy removes tightly coupled
 code between pages and Redux by infusing separation of concerns
 making code more readable and maintainable. <b>Steven Wickers</b>
-created the Gravy pattern and was launch in <b>November 2017</b>.
+created the GraVy coding pattern and was launch in <b>November 2017</b>.
 </p>
-<p><h2><b>What the Training</b>
-<a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a> here!
+<p><h2><b>Watch the GraVy training </b>
+<a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
 </h2>
 </p>
 
@@ -77,13 +77,13 @@ Select is an inherit function within most databases
 engines like Mongo, SQL and Oracle.
 </p>
 <p>
-Another example is if a file that call API should have naturally
+Another example is if a file that calls APIs should have naturally
 named functions such as GET, POST, PUT, PATCH and DELETE</p>
 <p>
 Developers understand immediately natural named function
 </p>
 </p>
-<p><h2><b>What the Training</b>
-<a href="http://gravytraining.azurewebsites.net" target="_blank">Videos</a> here!
+<p><h2><b>Watch the GraVy training </b>
+<a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
 </h2>
 </p>
