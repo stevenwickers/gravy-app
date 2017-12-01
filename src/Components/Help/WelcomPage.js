@@ -14,7 +14,7 @@ const WelcomePage = () =>{
             <div className="row column text-center">
                 <h1><img className="" src={require('./Lib/Images/Gravy_CoddingPattern.png')} /></h1>
                 <p className="lead">Gravy pattern will enhance you React and Redux experience.</p>
-                <Link to="/Overview" className="button large">Learn More</Link>
+                <Link to="Overview" className="button large">Learn More</Link>
             </div>
 
 
@@ -80,10 +80,9 @@ const WelcomePage = () =>{
             <div className="row column">
                 <div className="callout primary text-center">
                     <h3>Videos!</h3>
-                    <p><h2><b>Watch the GraVy training </b>
+                    <h2><b>Watch the GraVy training </b>
                         <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
                     </h2>
-                    </p>
                     <p>Contact Steven Wickers @ <a href="mailto:StevenWickers_Gravy@gmail.com">SteveWickers_Gravy@gmail.com</a></p>
                 </div>
             </div>

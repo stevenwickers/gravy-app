@@ -29,11 +29,7 @@ app.use('/sapi', staticMovieRouts);
 app.use('/sapi', staticMemberRouts);
 
 
-app.get('/', function(req, res) {
-    //const initialContent = serverRender();
 
-    res.sendFile(path.join( __dirname, '../src/index.html'));
-});
 
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
@@ -41,6 +37,14 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.use(require('webpack-hot-middleware')(compiler));
+
+
+app.get('*', function(req, res) {
+    //const initialContent = serverRender();
+
+    res.sendFile(path.join( __dirname, '../src/index.html'));
+});
+
 
 
 app.listen(port, function(err) {

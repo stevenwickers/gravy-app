@@ -12,16 +12,16 @@ const MovieList = ({searchResults, pagingModel, onSort, onRowEdit}) =>{
             <thead>
             <tr className="table-header-color">
                 <th>
-                    <Link to="" onClick={()=>onSort(MovieModel.p_MovieName.name)}>Movie ID</Link>
+                    <Link to="" onClick={()=>onSort(MovieModel.p_MovieId.name)}>Movie ID</Link>
                 </th>
                 <th>
                     <Link to="" onClick={()=>onSort(MovieModel.p_MovieName.name)}>Movie Name</Link>
                 </th>
                 <th>
-                    <Link to="" onClick={()=>onSort(MovieModel.p_ReleaseDate.name)}>Release Date</Link>
+                    <Link to="" onClick={()=>onSort(MovieModel.p_releaseDateRaw.name)}>Release Date</Link>
                 </th>
                 <th>
-                    <Link to="" onClick={()=>onSort(MovieModel.p_ReleaseDate.name)}>Domestic Gross</Link>
+                    <Link to="" onClick={()=>onSort(MovieModel.p_domesticGrossRaw.name)}>Domestic Gross</Link>
                 </th>
                 <th>Movie Link</th>
                 <th>Modify</th>

@@ -13,7 +13,7 @@ const MovieListRow = ({movie, onEdit}) => {
             <td>{movie[MovieModel.p_ReleaseDate.name]}</td>
             <td>{movie[MovieModel.p_ProductionBudget.name]}</td>
             <td>
-                <a href={movie[MovieModel.p_MovieLink.name]}>Movie Link</a>
+                <a href={movie[MovieModel.p_MovieLink.name]} target="_blank">Movie Link</a>
             </td>
             <td>
                 <a href="#" onClick={()=>onEdit(movie[MovieModel.p_MovieId.name])}>

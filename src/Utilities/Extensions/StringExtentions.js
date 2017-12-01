@@ -11,11 +11,18 @@ String.prototype.ConvertMoneyStringToDouble = function() {
 
 String.prototype.ConvertMoneyStringToDouble = function() {
 
+
     let money = this ? this : '';
 
     money = money.replace('$','');
     money = money.split(',').join('');
     money = Number(money);
+
+    if(isNaN(money)){
+
+        return this;
+
+    }
 
     return money;
 
