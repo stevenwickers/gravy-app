@@ -29,8 +29,6 @@ app.use('/sapi', staticMovieRouts);
 app.use('/sapi', staticMemberRouts);
 
 
-
-
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath

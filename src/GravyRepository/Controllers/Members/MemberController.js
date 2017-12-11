@@ -33,6 +33,11 @@ export default class MemberController extends BaseController {
 
     }
 
+    ValidateModel(model, members){
+
+        //TODO:
+
+    }
 
     /*** CRUD Operations! ***/
     SelectById(id){
@@ -62,13 +67,6 @@ export default class MemberController extends BaseController {
 
     }
 
-    DeleteById(id){
-
-        this.BaseDelete(this.apiDelete, id, MemberTypes.MEMBER_DELETE_SUCCESS);
-
-    }
-
-    ///NOT IMPLEMENTED
     Delete(model){
 
         let id = model.properties.p_MemberID.value;
@@ -76,6 +74,11 @@ export default class MemberController extends BaseController {
 
     }
 
+    DeleteById(id){
+
+        this.BaseDelete(this.apiDelete, id, MemberTypes.MEMBER_DELETE_SUCCESS);
+
+    }
 
 }
 

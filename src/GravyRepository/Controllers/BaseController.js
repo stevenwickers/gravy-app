@@ -6,7 +6,7 @@ import {SafeCopy} from "../../Utilities/ObjectUtilities";
 
 
 class BaseController extends React.Component {
-    constructor(props, getUrl, postUrl=getUrl, putUrl=getUrl, deleteUrl=getUrl, patchUrl=getUrl){
+    constructor(props, getUrl, postUrl=getUrl, putUrl=getUrl, deleteUrl="", patchUrl=""){
         super();
 
         let {dispatch} = props;
@@ -80,7 +80,7 @@ class BaseController extends React.Component {
 
     BaseInsert(url, properties, dispatchType){
 
-        let internalModel = this.TransposeToSchemaObject(properties);
+        let internalModel = TransposeModelToDataObject(properties);
 
         this.dispatch(
             ActionStore.postResults(
@@ -96,7 +96,7 @@ class BaseController extends React.Component {
 
         url = url + '/' + id;
 
-        let internalModel = this.TransposeToSchemaObject(properties);
+        let internalModel = TransposeModelToDataObject(properties);
 
         this.dispatch(
             ActionStore.putResults(
@@ -113,18 +113,9 @@ class BaseController extends React.Component {
 
     }
 
-
     AutoMapModels(target, source, modelType){
 
         return AutoMap(target, source, modelType)
-
-    }
-
-
-    TransposeToSchemaObject(model){
-
-        //Call Model Helper function
-        return TransposeModelToDataObject(model);
 
     }
 

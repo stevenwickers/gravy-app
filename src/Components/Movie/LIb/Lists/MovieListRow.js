@@ -6,6 +6,8 @@ import {MovieModel} from '../../../../GravyRepository/Controllers/Movies/Models/
 
 const MovieListRow = ({movie, onEdit}) => {
 
+    debugger;
+
     return (
         <tr>
             <td>{movie[MovieModel.p_MovieId.name]}</td>

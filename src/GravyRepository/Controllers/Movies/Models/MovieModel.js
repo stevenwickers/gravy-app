@@ -16,12 +16,12 @@
 import {AttributeTypes} from '../../AttributesTypes';
 
 export let MovieModel = {
-    p_MovieId: {name:'movie_id', type: AttributeTypes.number, value:'', sealed: true, isIdField:true},
-    p_MovieName: {name:'movie_name', type: AttributeTypes.string, value:''},
+    p_MovieId: {name:'movie_id', type: AttributeTypes.number, value:'', sealed: true},
+    p_MovieName: {name:'movie_name', type: AttributeTypes.string, value:'', length:'50'},
     p_ReleaseDate: {name:'release_date', type: AttributeTypes.string, value:''},
     p_WorldWideGross: {name:'worldwide_gross', type: AttributeTypes.string, value:''},
     p_ProductionBudget: {name:'production_budget', type: AttributeTypes.string,  value:''},
-    p_MovieLink: {name:'movie_link', type: AttributeTypes.string,  value:''},
+    p_MovieLink: {name:'movie_link', type: AttributeTypes.string,  value:'', length:'150'},
     p_DomesticGross: {name:'domestic_gross', type: AttributeTypes.string,  value:''},
 
     //Properties not part of the API return data

@@ -62,7 +62,7 @@ const AddEditMoviePopup = ({model, title, calendarVisible, onToggleCalendar, onC
 
                                 <div className="medium-8 columns">
                                     <label>Movie Name</label>
-                                    <input maxLength="50"
+                                    <input maxLength={MovieModel.p_MovieName.length}
                                            defaultValue={model.properties.p_MovieName.value}
                                            name={MovieModel.p_MovieName.name}
                                            type="text"
@@ -146,6 +146,7 @@ const AddEditMoviePopup = ({model, title, calendarVisible, onToggleCalendar, onC
                                     <label>Movie Link
                                         <input defaultValue={model.properties.p_MovieLink.value}
                                                name={MovieModel.p_MovieLink.name}
+                                               maxLength={MovieModel.p_MovieLink.length}
                                                type="text"
                                                placeholder="Movie Link"
                                                onChange={(e)=>onInputChange(model, e)} />

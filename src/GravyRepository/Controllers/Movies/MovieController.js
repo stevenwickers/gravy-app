@@ -5,12 +5,13 @@ import MovieModelContainer from './Models/MovieModelContainer';
 import {MovieModel} from './Models/MovieModel';
 import {mapStateToProps} from "./StateMappers/MovieStateMapperV1";
 
+import Validation from './EntityLogic/Validation';
+
 import * as MovieTypes from './Models/MovieTypes';
 
 //Extension files
 import '../../../Utilities/Extensions/StringExtentions';
 import '../../../Utilities/Extensions/ArrayExtensions';
-
 
 
 export default class MovieController extends BaseController {
@@ -33,7 +34,6 @@ export default class MovieController extends BaseController {
 
     }
 
-
     CreateModelFromData(data){
 
         return this.TransposeObjectToModel(data, MovieModel);
@@ -41,6 +41,11 @@ export default class MovieController extends BaseController {
 
     }
 
+    ValidateModel(model, movies){
+
+        return Validation.IsMovieModelValid(model, movies);
+
+    }
 
     /*** CRUD Operations! ***/
     SelectById(id){
@@ -70,12 +75,6 @@ export default class MovieController extends BaseController {
 
     }
 
-    DeleteById(id){
-
-        this.BaseDelete(this.apiDelete, id, MovieTypes.MOVIE_DELETE_SUCCESS);
-
-    }
-
     Delete(model){
 
         ///NOT IMPLEMENTED
@@ -83,6 +82,13 @@ export default class MovieController extends BaseController {
         this.DeleteById(id);
 
     }
+
+    DeleteById(id){
+
+        this.BaseDelete(this.apiDelete, id, MovieTypes.MOVIE_DELETE_SUCCESS);
+
+    }
+
 
 }
 

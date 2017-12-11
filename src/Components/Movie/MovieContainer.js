@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux'
 
 //Controller - Container
 import MovieController, {movieMapStateToProps} from '../../GravyRepository/Controllers/Movies/MovieController';
@@ -58,10 +59,8 @@ class MovieContainer extends React.Component{
         //Get Member #1
         this.MemberController.SelectById(1);
 
-
         //Movie Model
         this.model = this.MovieController.Model;
-
 
 
         //Bind Events
@@ -80,7 +79,6 @@ class MovieContainer extends React.Component{
 
     }
 
-
     onSortModel(columnName){
 
         debugger;
@@ -88,7 +86,6 @@ class MovieContainer extends React.Component{
         this.MovieController.SortModelData(this.props.movies, columnName);
 
     }
-
 
     render(){
 
@@ -179,7 +176,6 @@ class MovieContainer extends React.Component{
 
 function mapStateToProps(state, ownProps){
 
-
     return{
 
         movies: movieMapStateToProps(state),
@@ -187,10 +183,9 @@ function mapStateToProps(state, ownProps){
 
         loading: state.ajaxCallsInProcess > 0,
 
-
-
     }
 
 }
+
 
 export default connect(mapStateToProps)(MovieContainer)

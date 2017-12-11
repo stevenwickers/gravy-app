@@ -46,6 +46,8 @@ class ControlEvents{
 
     handleEditMovieForm(id){
 
+        debugger;
+
         let item = this.props.movies.filter(x => x[MovieModel.p_MovieId.name] == id);
 
         this.model.properties = this.MovieController.TransposeObjectToModel(item, MovieModel);
@@ -59,8 +61,15 @@ class ControlEvents{
 
     handleCloseAddEditForm(isSaving){
 
+        debugger;
 
         if(isSaving){
+
+            if(!this.MovieController.ValidateModel(this.model, this.props.movies)){
+
+                return;
+
+            }
 
             switch (this.state.modifyingMode){
                 case ModifyingModes.Add :
