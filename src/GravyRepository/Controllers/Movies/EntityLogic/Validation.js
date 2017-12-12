@@ -8,9 +8,12 @@ class Validation{
     static IsMovieModelValid(model, movies){
 
         let isValid = true;
+        let movieIDValue = model.getProperty(MovieModel.p_MovieId.name).value;
         let moveNameValue = model.getProperty(MovieModel.p_MovieName.name).value;
         let linkValue = model.getProperty(MovieModel.p_MovieLink.name).value;
         let dateValue = model.getProperty(MovieModel.p_ReleaseDate.name).value;
+
+        let isUpdating = movieIDValue > 0;
 
         //Movie Name
         if(moveNameValue.trim() === ''){
@@ -20,12 +23,19 @@ class Validation{
 
         } else {
 
-            if(movies.find(x => x[MovieModel.p_MovieName.name] === moveNameValue)) {
+            let exists = movies.filter(x => x[MovieModel.p_MovieName.name] === moveNameValue);
 
-                toastr.error('Duplicate Movie Name!');
-                isValid = false;
+            if(exists.length > 0){
+
+                if(exists[0][MovieModel.p_MovieId.name] !== movieIDValue){
+
+                    toastr.error('Duplicate Movie Name!');
+                    isValid = false;
+
+                }
 
             }
+
 
         }
 

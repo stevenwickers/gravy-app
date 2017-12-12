@@ -65,6 +65,7 @@ class ControlEvents{
 
         if(isSaving){
 
+
             if(!this.MovieController.ValidateModel(this.model, this.props.movies)){
 
                 return;
