@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 import App from './Components/App';
 import HomePage from './Components/Home/HomePage';
-import Overview from './Components/Help/Overiview';
+import Overview from './Components/Help/Lib/Pages/Overview';
 import MovieContainer from './Components/Movie/MovieContainer';
 
 export default (

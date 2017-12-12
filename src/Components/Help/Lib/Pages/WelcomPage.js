@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import * as HelpUtilities from '../Utilities/HelpUtilities';
 
 const WelcomePage = () =>{
     return (
@@ -7,12 +8,12 @@ const WelcomePage = () =>{
 
             <div className="row columns">
                 <div className="large-12 columns">
-                    <img className="" src={require('./Lib/Images/mrc_overview.png')} />
+                    <img className="" src={require('../Images/mrc_overview.png')} />
                 </div>
             </div>
 
             <div className="row column text-center">
-                <h1><img className="" src={require('./Lib/Images/Gravy_CoddingPattern.png')} /></h1>
+                <h1><img className="" src={require('../Images/Gravy_CoddingPattern.png')} /></h1>
                 <p className="lead">Gravy pattern will enhance you React and Redux experience.</p>
                 <Link to="Overview" className="button large">Learn More</Link>
             </div>
@@ -59,31 +60,15 @@ const WelcomePage = () =>{
 
             </div>
 
-            {/*<div className="row">
-                <div className="medium-6 large-3 columns">
-                    <Link to="/Overview" className="button large">Learn More</Link>
-                </div>
-                <div className="medium-6 large-3 columns">
-                    <Link to="/Overview" className="button large">Learn More</Link>
-                </div>
-                <div className="medium-6 large-3 columns">
-                    <a href="/Overview" className="button large">Learn More</a>
-                </div>
-                <div className="medium-6 large-3 columns">
-                    <a href="/Overview" className="button large">Learn More</a>
-                </div>
-
-            </div>*/}
-
 
 
             <div className="row column">
                 <div className="callout primary text-center">
                     <h3>Videos!</h3>
                     <h2><b>Watch the GraVy training </b>
-                        <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+                        <a href={HelpUtilities.GT_URL} target="_blank">videos</a> here!
                     </h2>
-                    <p>Contact Steven Wickers @ <a href="mailto:StevenWickers_Gravy@gmail.com">SteveWickers_Gravy@gmail.com</a></p>
+                    <p>Contact Steven Wickers @ <a href="mailto:StevenWickersGravy@gmail.com">SteveWickersGravy@gmail.com</a></p>
                 </div>
             </div>
 
@@ -92,12 +77,12 @@ const WelcomePage = () =>{
             <div className="row">
                 <div className="large-6 columns">
                     <h4>Current React / Redux</h4>
-                    <img className="thumbnail" src={require('./Lib/Images/current_redux.png')} />
+                    <img className="thumbnail" src={require('../Images/current_redux.png')} />
 
                 </div>
                 <div className="large-6 columns">
                     <h4>GraVy Coding Pattern</h4>
-                    <img className="thumbnail" src={require('./Lib/Images/mrc_overview_complex.png')} />
+                    <img className="thumbnail" src={require('../Images/mrc_overview_complex.png')} />
 
                 </div>
             </div>
@@ -107,6 +92,6 @@ const WelcomePage = () =>{
 
         </div>
     )
-}
+};
 
 export default WelcomePage;

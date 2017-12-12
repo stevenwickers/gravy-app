@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router';
-import HelpMenu from './Lib/HelpMenu';
-import './Lib/Styles/HelpStyles.css';
+import HelpMenu from '../HelpMenu';
+import '../Styles/HelpStyles.css';
+import * as HelpUtilities from '../Utilities/HelpUtilities';
 
-const Overiview = () =>{
+const Overview = () =>{
     return (
         <div>
 
@@ -26,7 +27,7 @@ const Overiview = () =>{
                             created the GraVy coding pattern and was launch in <b>November 2017</b>.
                         </p>
                         <h2><b>Watch the GraVy training </b>
-                            <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+                            <a href={HelpUtilities.GT_URL} target="_blank">videos</a> here!
                         </h2>
 
                     </div>
@@ -47,7 +48,7 @@ const Overiview = () =>{
                         <p>There is only one Action file for entire project with naturally named
                             functions such as GET, PUT, POST, DELETE, and PATCH.</p>
                         <p>
-                            <img src="http://gravytraining.azurewebsites.net/Images/mrc_overview_complex.png" width="350"/>
+                            <img src={require('../Images/mrc_overview_complex.png')} width="350"/>
                         </p>
                     </div>
 
@@ -73,7 +74,7 @@ const Overiview = () =>{
                             because the model property can be used instead.
                         </p>
                         <p>
-                            <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
+                            <img src={require('../Images/Model.png')} />
                         </p>
 
                     </div>
@@ -86,7 +87,7 @@ const Overiview = () =>{
                             GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data
                             from the Redux store.</p>
                             <p >
-                                <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" />
+                                <img src={require('../Images/GravyBoat.png')} />
                             </p>
 
                     </div>
@@ -110,7 +111,7 @@ const Overiview = () =>{
                         </p>
 
                     <h2><b>Watch the GraVy training </b>
-                        <a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+                        <a href={HelpUtilities.GT_URL} target="_blank">videos</a> here!
                     </h2>
 
 
@@ -122,6 +123,6 @@ const Overiview = () =>{
 
         </div>
     )
-}
+};
 
-export default Overiview;
+export default Overview;

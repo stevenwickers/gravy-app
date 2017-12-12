@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import WelcomePage from '../Help/WelcomPage';
+import WelcomePage from '../Help/Lib/Pages/WelcomPage';
 
 
 class HomePage extends React.Component {
