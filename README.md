@@ -8,7 +8,7 @@
 <b>GraVy</b> is a coding pattern, which is used to enhance your
 React and Redux development. GraVy removes tightly coupled
 code between pages and Redux by infusing separation of concerns
-making code more readable and maintainable. <b><a href="https://www.linkedin.com/in/stevenwickers/">Steven Wickers</a></b>
+making code more readable and maintainable. <b><a href="https://www.linkedin.com/in/stevenwickers/" target="_blank">Steven Wickers</a></b>
 created the GraVy coding pattern and was launch in <b>November 2017</b>.
 </p>
 <p><h2><b>Watch the GraVy training </b>
