@@ -8,11 +8,11 @@
 <b>GraVy</b> is a coding pattern, which is used to enhance your
 React and Redux development. GraVy removes tightly coupled
 code between pages and Redux by infusing separation of concerns
-making code more readable and maintainable. <b>Steven Wickers</b>
+making code more readable and maintainable. <b><a href="https://www.linkedin.com/in/stevenwickers/">Steven Wickers</a></b>
 created the GraVy coding pattern and was launch in <b>November 2017</b>.
 </p>
 <p><h2><b>Watch the GraVy training </b>
-<a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+<a href="http://gravytraining.net" target="_blank">videos</a> here!
 </h2>
 </p>
 
@@ -30,7 +30,7 @@ created the GraVy coding pattern and was launch in <b>November 2017</b>.
    <p>There is only one Action file for entire project with naturally named
    functions such as GET, PUT, POST, DELETE, and PATCH.</p>
    <p align="center">
-     <img src="http://gravytraining.azurewebsites.net/Images/mrc_overview_complex.png" width="350"/>
+     <img src="http://gravytraining.net/Images/mrc_overview_complex.png" width="350"/>
    </p>
 </p>
 <p><h1><b>Models</b></h1></p>
@@ -53,7 +53,7 @@ created the GraVy coding pattern and was launch in <b>November 2017</b>.
 <p>Models are used with forms and no need to use state for input text boxes
  because the model property can be used instead.
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/Model.png" />
+       <img src="http://gravytraining.net/Images/Model.png" />
     </p>
 </p>
 <p><h1><b>GravyBoat</b></h1></p>
@@ -63,7 +63,7 @@ created the GraVy coding pattern and was launch in <b>November 2017</b>.
     GravyBoat is used within the controller’s <b><u><i>mapStateToProps</i></u></b> to get data
     from the Redux store.
     <p align="center">
-       <img src="http://gravytraining.azurewebsites.net/Images/GravyBoat.png" />
+       <img src="http://gravytraining.net/Images/GravyBoat.png" />
     </p>
 </p>
 <p><h1>Naturally Named Functions</h1></p>
@@ -84,6 +84,6 @@ Developers understand immediately natural named function
 </p>
 </p>
 <p><h2><b>Watch the GraVy training </b>
-<a href="http://gravytraining.azurewebsites.net" target="_blank">videos</a> here!
+<a href="http://gravytraining.net" target="_blank">videos</a> here!
 </h2>
 </p>
