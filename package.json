@@ -17,7 +17,7 @@
     "hoek": "^5.0.3",
     "jquery": "^3.2.1",
     "moment": "^2.19.3",
-    "mongoose": "^4.12.1",
+    "mongoose": "^5.7.13",
     "rc-calendar": "^9.1.12",
     "react": "15.4.2",
     "react-dom": "15.4.2",
